@@ -14,3 +14,13 @@ const addHandlers = () => {
   $(() => {
     addHandlers()
   })
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+  function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }

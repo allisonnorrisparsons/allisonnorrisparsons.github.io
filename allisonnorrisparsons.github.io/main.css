@@ -1,1 +1,123 @@
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+body {
+background-color: rgb(240,240, 240);
+}
+
+h1,h2,h3,h4,h5{
+font-family: "Raleway", sans-serif;
+}
+
+.name{
+text-align:center;
+}
+
+h4:hover{
+    color:grey;
+}
+
+.about-me{
+margin-left: 40px;
+margin-right:40px;
+}
+
+.main { grid-area: main; 
+}
+
+.footer { grid-area: footer; 
+}
+
+.image{
+grid-area:image;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 75px;
+  grid-auto-flow: dense;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.container > div:nth-child(1n) {
+    background-color: rgb(240,240, 240)4;	
+  }
+  
+  .container > div:nth-child(3n) {
+    background-color:rgb(240,240, 240);
+  }
+  
+  .container > div:nth-child(2n) {
+        background-color:rgb(240,240, 240);
+  }
+  
+  .container > div:nth-child(4n) {
+        background-color:rgb(240,240, 240);
+  }
+/* menu button */
+.button{
+    margin-left:300px;
+}
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }
+
+  
